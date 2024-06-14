@@ -86,9 +86,9 @@ object Dependencies {
   object Mill {
     val millVersion = "0.11.7"
 
-    val scalalib = "com.lihaoyi" %% "mill-scalalib" % millVersion
-    val main = "com.lihaoyi" %% "mill-main" % millVersion
-    val mainApi = "com.lihaoyi" %% "mill-main-api" % millVersion
+    val scalalib = "com.lihaoyi" %% "mill-scalalib" % millVersion % Provided
+    val main = "com.lihaoyi" %% "mill-main" % millVersion % Provided
+    val mainApi = "com.lihaoyi" %% "mill-main-api" % millVersion % Provided
     val mainTestkit = "com.lihaoyi" %% "mill-main-testkit" % millVersion % Test
   }
 
